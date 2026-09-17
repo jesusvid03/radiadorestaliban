@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Radiadores TALIBAN | Guasave, Sinaloa</title>
+  <meta name="description" content="Taller de Radiadores TALIBAN en Guasave, Sinaloa. Radiadores nuevos, ánforas, enfriadores, soldadura, sondeado y anticongelante. Atención profesional.">
+  <meta name="theme-color" content="#0B1E3D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:#0B1E3D; --blue-light:#15305A; --red:#E30613;
+      --yellow:#FFD100; --beige:#F5F0E6; --white:#fff; --gray:#333;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Roboto',sans-serif; background:var(--beige); color:var(--gray); line-height:1.5; }
+    a { color:inherit; }
+    header {
+      background:linear-gradient(135deg,var(--blue),var(--blue-light)); color:#fff;
+      padding:12px 20px; position:sticky; top:0; z-index:100;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+    }
+    .header-inner { max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:15px; }
+    .logo { font-family:'Oswald',sans-serif; font-size:1.35rem; font-weight:700; letter-spacing:.5px; display:flex; align-items:center; gap:8px; }
+    .logo span { color:var(--yellow); }
+    .header-phone { background:var(--red); color:#fff; padding:8px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:.95rem; display:flex; align-items:center; gap:6px; transition:.2s; }
+    .header-phone:hover { background:#c00510; transform:scale(1.05); }
+
+    .hero {
+      background:linear-gradient(135deg,var(--blue),#1a3a6e); color:#fff;
+      padding:60px 20px 70px; text-align:center; position:relative; overflow:hidden;
+    }
+    .hero::before { content:''; position:absolute; top:-50px; right:-50px; width:250px; height:250px; background:radial-gradient(circle,rgba(255,209,0,.15),transparent 70%); border-radius:50%; }
+    .hero-content { max-width:800px; margin:auto; position:relative; z-index:2; }
+    .hero-badge { display:inline-block; background:var(--yellow); color:var(--blue); font-weight:700; font-size:.9rem; padding:6px 18px; border-radius:50px; margin-bottom:18px; letter-spacing:1px; text-transform:uppercase; }
+    .hero h1 { font-family:'Oswald',sans-serif; font-size:clamp(2.4rem,7vw,3.8rem); font-weight:700; line-height:1.1; margin-bottom:8px; text-shadow:2px 2px 0 rgba(0,0,0,.3); }
+    .hero h1 .red { color:var(--red); text-shadow:2px 2px 0 rgba(0,0,0,.4); }
+    .hero-subtitle { font-size:1.25rem; opacity:.95; margin-bottom:30px; font-weight:500; }
+    .hero-buttons { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 28px; border-radius:50px; font-weight:700; font-size:1.05rem; text-decoration:none; transition:.25s; border:none; cursor:pointer; }
+    .btn-whatsapp { background:#25D366; color:#fff; box-shadow:0 4px 15px rgba(37,211,102,.4); }
+    .btn-whatsapp:hover { background:#1ebe57; transform:translateY(-2px); }
+    .btn-call { background:var(--red); color:#fff; box-shadow:0 4px 15px rgba(227,6,19,.35); }
+    .btn-call:hover { background:#c00510; transform:translateY(-2px); }
+
+    .services { padding:60px 20px; max-width:1100px; margin:auto; }
+    .section-title { font-family:'Oswald',sans-serif; font-size:2.1rem; text-align:center; color:var(--blue); margin-bottom:12px; text-transform:uppercase; letter-spacing:1px; }
+    .section-subtitle { text-align:center; color:#666; margin-bottom:40px; font-size:1.1rem; }
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px; }
+    .service-card { background:#fff; border-radius:16px; padding:28px 24px; box-shadow:0 6px 20px rgba(0,0,0,.08); text-align:center; transition:.25s; border-top:5px solid var(--red); position:relative; }
+    .service-card:hover { transform:translateY(-6px); box-shadow:0 12px 28px rgba(0,0,0,.12); }
+    .service-card.highlight { border-top-color:var(--yellow); background:linear-gradient(180deg,#fffef5,#fff); }
+    .service-icon { font-size:2.6rem; margin-bottom:14px; }
+    .service-card h3 { font-family:'Oswald',sans-serif; font-size:1.35rem; color:var(--blue); margin-bottom:8px; }
+    .service-card p { font-size:.95rem; color:#555; }
+    .new-badge { position:absolute; top:-12px; right:16px; background:var(--yellow); color:var(--blue); font-weight:700; font-size:.75rem; padding:4px 12px; border-radius:20px; letter-spacing:.5px; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+
+    .why-us { background:var(--blue); color:#fff; padding:55px 20px; }
+    .why-us-inner { max-width:900px; margin:auto; text-align:center; }
+    .why-us h2 { font-family:'Oswald',sans-serif; font-size:2rem; margin-bottom:30px; color:var(--yellow); }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:25px; }
+    .feature { background:rgba(255,255,255,.08); border-radius:12px; padding:22px 18px; }
+    .feature-icon { font-size:2rem; margin-bottom:10px; }
+    .feature h3 { font-size:1.1rem; margin-bottom:6px; color:var(--yellow); }
+    .feature p { font-size:.9rem; opacity:.9; }
+
+    .order-section { padding:60px 20px; background:#f0ebe3; }
+    .order-inner { max-width:700px; margin:auto; }
+    .order-box { background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.1); }
+    .order-header { background:linear-gradient(135deg,var(--red),#c00510); color:#fff; padding:28px 24px; text-align:center; }
+    .order-header h2 { font-family:'Oswald',sans-serif; font-size:1.9rem; margin-bottom:6px; }
+    .order-header p { opacity:.95; }
+    .order-body { padding:32px 28px; }
+    .form-group { margin-bottom:20px; }
+    .form-group label { display:block; font-weight:600; margin-bottom:6px; color:var(--blue); font-size:.95rem; }
+    .form-group input,.form-group select,.form-group textarea { width:100%; padding:13px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:1rem; font-family:inherit; transition:border-color .2s; background:#fafafa; }
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus { outline:none; border-color:var(--red); background:#fff; }
+    .form-group textarea { min-height:110px; resize:vertical; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .btn-submit { width:100%; background:var(--blue); color:#fff; border:none; padding:16px; border-radius:50px; font-size:1.15rem; font-weight:700; cursor:pointer; transition:.25s; margin-top:8px; }
+    .btn-submit:hover { background:var(--blue-light); transform:translateY(-2px); }
+
+    .contact { padding:60px 20px; max-width:900px; margin:auto; }
+    .contact-box { background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.1); }
+    .contact-header { background:linear-gradient(135deg,var(--blue),var(--blue-light)); color:#fff; padding:28px 24px; text-align:center; }
+    .contact-header h2 { font-family:'Oswald',sans-serif; font-size:1.8rem; margin-bottom:6px; }
+    .contact-body { padding:30px 24px; }
+    .contact-item { display:flex; align-items:flex-start; gap:16px; margin-bottom:22px; padding-bottom:18px; border-bottom:1px solid #eee; }
+    .contact-item:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+    .contact-icon { background:var(--beige); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.4rem; flex-shrink:0; }
+    .contact-info h3 { font-size:.95rem; color:#777; margin-bottom:4px; font-weight:500; }
+    .contact-info a,.contact-info p { font-size:1.15rem; color:var(--blue); text-decoration:none; font-weight:700; }
+    .contact-info a:hover { color:var(--red); }
+    .social-links { display:flex; justify-content:center; gap:14px; margin-top:28px; flex-wrap:wrap; }
+    .social-btn { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; text-decoration:none; color:#fff; transition:transform .2s; }
+    .social-btn:hover { transform:scale(1.12); }
+    .social-whatsapp { background:#25D366; }
+    .social-maps { background:#34A853; }
+
+    footer { background:var(--blue); color:#fff; text-align:center; padding:28px 20px; font-size:.9rem; }
+    footer p { opacity:.85; }
+    footer strong { color:var(--yellow); }
+
+    @media (max-width:600px) {
+      .header-inner { flex-direction:column; gap:10px; }
+      .logo { font-size:1.2rem; }
+      .hero { padding:45px 16px 55px; }
+      .btn { width:100%; }
+      .services { padding:45px 16px; }
+      .form-row { grid-template-columns:1fr; }
+      .order-body,.contact-body { padding:24px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">🔧 TALLER <span>TALIBAN</span></div>
+    <a href="tel:+526871660355" class="header-phone">📞 687-166-0355</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Radiadores Nuevos</div>
+    <h1>TALLER de<br><span class="red">RADIADORES</span><br>TALIBAN</h1>
+    <p class="hero-subtitle">Especialistas en radiadores, ánforas, enfriadores y más</p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/526871660355?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20radiadores" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        💬 WhatsApp
+      </a>
+      <a href="#pedidos" class="btn btn-call">📩 Hacer pedido</a>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <h2 class="section-title">Nuestros Servicios</h2>
+  <p class="section-subtitle">Soluciones completas para el sistema de enfriamiento de tu vehículo</p>
+  <div class="services-grid">
+    <div class="service-card highlight">
+      <div class="new-badge">NUEVOS</div><div class="service-icon">🌡️</div>
+      <h3>Radiadores</h3><p>Radiadores nuevos y de calidad para todo tipo de vehículos. Instalación profesional.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛢️</div><h3>Ánforas</h3>
+      <p>Venta e instalación de ánforas (depósitos de recuperación de refrigerante).</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">❄️</div><h3>Enfriadores</h3>
+      <p>Enfriadores de aceite y de transmisión. Mantenimiento y cambio.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔍</div><h3>Sondeado</h3>
+      <p>Diagnóstico y sondeado de radiadores para detectar fugas y obstrucciones.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔧</div><h3>Soldadura</h3>
+      <p>Soldadura especializada de radiadores de aluminio y cobre.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🧪</div><h3>Anticongelante</h3>
+      <p>Venta de anticongelante de calidad y cambio completo del sistema.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="why-us-inner">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">✅</div><h3>Radiadores Nuevos</h3><p>Trabajamos con piezas de calidad garantizada</p></div>
+      <div class="feature"><div class="feature-icon">⚡</div><h3>Servicio Rápido</h3><p>Atención ágil para que no te quedes sin auto</p></div>
+      <div class="feature"><div class="feature-icon">👨‍🔧</div><h3>Experiencia</h3><p>Especialistas en sistemas de enfriamiento</p></div>
+      <div class="feature"><div class="feature-icon">📍</div><h3>Ubicación Cómoda</h3><p>A un costado de la Carretera Internacional</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="order-section" id="pedidos">
+  <div class="order-inner">
+    <div class="order-box">
+      <div class="order-header">
+        <h2>Haz tu Pedido</h2>
+        <p>Llena el formulario y te contactamos lo antes posible</p>
+      </div>
+      <div class="order-body">
+        <form action="https://formsubmit.co/jesus687vidal@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo pedido - Taller Radiadores TALIBAN">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="687-XXX-XXXX">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio">¿Qué servicio necesitas? *</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option>Radiador nuevo</option><option>Ánfora</option><option>Enfriador</option>
+              <option>Sondeado</option><option>Soldadura</option><option>Anticongelante</option><option>Otro / Varios</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vehiculo">Marca y modelo del vehículo (opcional)</label>
+            <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej: Nissan NP300 2018">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Detalles del pedido o mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más detalles..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Pedido 📩</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact-box">
+    <div class="contact-header">
+      <h2>Contáctanos</h2><p>Estamos listos para atenderte</p>
+    </div>
+    <div class="contact-body">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+          <h3>Teléfono / WhatsApp</h3>
+          <a href="tel:+526871660355">687-166-0355</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-info">
+          <h3>Ubicación</h3>
+          <p>Guasave, Sinaloa</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Taller+de+Radiadores+TALIBAN+Guasave+Sinaloa" target="_blank" rel="noopener">Ver ubicación en Google Maps →</a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://wa.me/526871660355" class="social-btn social-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Taller+de+Radiadores+TALIBAN+Guasave+Sinaloa" class="social-btn social-maps" target="_blank" rel="noopener" aria-label="Google Maps">📍</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> <strong>Taller de Radiadores TALIBAN</strong> · Guasave, Sinaloa</p>
+  <p>Radiadores · Ánforas · Enfriadores · Soldadura · Sondeado · Anticongelante</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
