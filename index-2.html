@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Radiadores TALIBAN | Guasave, Sinaloa</title>
+  <meta name="description" content="Taller de Radiadores TALIBAN en Guasave, Sinaloa. Radiadores nuevos, ánforas, enfriadores, soldadura, sondeado y anticongelante. Atención profesional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0B1E3D;
+      --blue-light: #15305A;
+      --red: #E30613;
+      --yellow: #FFD100;
+      --beige: #F5F0E6;
+      --white: #ffffff;
+      --gray: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--beige);
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      color: white;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--yellow);
+    }
+
+    .header-phone {
+      background: var(--red);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .header-phone:hover {
+      background: #c00510;
+      transform: scale(1.05);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--blue) 0%, #1a3a6e 100%);
+      color: white;
+      padding: 60px 20px 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(255,209,0,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.4rem, 7vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+    }
+
+    .hero h1 .red {
+      color: var(--red);
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      opacity: 0.95;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe57;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+
+    .btn-call {
+      background: var(--red);
+      color: white;
+      box-shadow: 0 4px 15px rgba(227, 6, 19, 0.35);
+    }
+
+    .btn-call:hover {
+      background: #c00510;
+      transform: translateY(-2px);
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.1rem;
+      text-align: center;
+      color: var(--blue);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+      border-top: 5px solid var(--red);
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    .service-card.highlight {
+      border-top-color: var(--yellow);
+      background: linear-gradient(180deg, #fffef5 0%, white 100%);
+    }
+
+    .service-icon {
+      font-size: 2.6rem;
+      margin-bottom: 14px;
+    }
+
+    .service-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.35rem;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .new-badge {
+      position: absolute;
+      top: -12px;
+      right: 16px;
+      background: var(--yellow);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* ===== WHY US ===== */
+    .why-us {
+      background: var(--blue);
+      color: white;
+      padding: 55px 20px;
+    }
+
+    .why-us-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .why-us h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--yellow);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 22px 18px;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: var(--yellow);
+    }
+
+    .feature p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* ===== ORDER FORM ===== */
+    .order-section {
+      padding: 60px 20px;
+      background: #f0ebe3;
+    }
+
+    .order-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .order-box {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .order-header {
+      background: linear-gradient(135deg, var(--red) 0%, #c00510 100%);
+      color: white;
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .order-header h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.9rem;
+      margin-bottom: 6px;
+    }
+
+    .order-header p {
+      opacity: 0.95;
+      font-size: 1rem;
+    }
+
+    .order-body {
+      padding: 32px 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--blue);
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      background: #fafafa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--red);
+      background: white;
+    }
+
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--blue);
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 50px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+      margin-top: 8px;
+    }
+
+    .btn-submit:hover {
+      background: var(--blue-light);
+      transform: translateY(-2px);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-box {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .contact-header {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      color: white;
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .contact-header h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .order-body {
+        padding: 24px 18px;
+      }
+    }
+
+    .contact-body {
+      padding: 30px 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 22px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .contact-icon {
+      background: var(--beige);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .contact-info h3 {
+      font-size: 0.95rem;
+      color: #777;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .contact-info a, .contact-info p {
+      font-size: 1.15rem;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact-info a:hover {
+      color: var(--red);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .social-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .social-btn:hover {
+      transform: scale(1.12);
+    }
+
+    .social-whatsapp { background: #25D366; }
+    .social-facebook { background: #1877F2; }
+    .social-youtube { background: #FF0000; }
+    .social-maps { background: #34A853; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      opacity: 0.85;
+    }
+
+    footer strong {
+      color: var(--yellow);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .hero {
+        padding: 45px 16px 55px;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .services {
+        padding: 45px 16px;
+      }
+
+      .contact-body {
+        padding: 24px 18px;
+      }
+    }
+
+    /* ===== INTERACTIVE RADIATOR ===== */
+    .radiator-demo {
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #1a2a4a 0%, #0B1E3D 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .radiator-demo h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      color: var(--yellow);
+      margin-bottom: 8px;
+    }
+
+    .radiator-demo .warning {
+      background: rgba(227, 6, 19, 0.25);
+      border: 2px solid var(--red);
+      border-radius: 12px;
+      padding: 12px 18px;
+      max-width: 520px;
+      margin: 0 auto 30px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .radiator-container {
+      position: relative;
+      width: 280px;
+      height: 340px;
+      margin: 0 auto 25px;
+      user-select: none;
+    }
+
+    .radiator-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cap {
+      cursor: pointer;
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform-origin: 140px 55px;
+    }
+
+    .cap.removed {
+      transform: translate(95px, -80px) rotate(40deg);
+      pointer-events: none;
+    }
+
+    .water-spray {
+      position: absolute;
+      top: 42px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .water-spray.active {
+      opacity: 1;
+    }
+
+    .droplet {
+      position: absolute;
+      width: 9px;
+      height: 14px;
+      background: linear-gradient(180deg, #a8e0ff 0%, #1e90ff 100%);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      box-shadow: 0 0 6px rgba(30, 144, 255, 0.6);
+      animation: spray 0.85s ease-out infinite;
+    }
+
+    @keyframes spray {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.95;
+      }
+      100% {
+        transform: translate(var(--tx), var(--ty)) scale(0.25);
+        opacity: 0;
+      }
+    }
+
+    .reset-btn {
+      background: var(--yellow);
+      color: var(--blue);
+      border: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+      margin-top: 8px;
+    }
+
+    .reset-btn:hover {
+      background: #ffe033;
+      transform: scale(1.05);
+    }
+
+    .hint {
+      margin-top: 14px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        🔧 TALLER <span>TALIBAN</span>
+      </div>
+      <a href="tel:+526871660355" class="header-phone">
+        📞 687-166-0355
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Radiadores Nuevos</div>
+      <h1>TALLER de<br><span class="red">RADIADORES</span><br>TALIBAN</h1>
+      <p class="hero-subtitle">Especialistas en radiadores, ánforas, enfriadores y más</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/526871660355?text=Hola%2C%20me%20interesa%20información%20sobre%20radiadores" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="#pedidos" class="btn btn-call">
+          📩 Hacer pedido
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <p class="section-subtitle">Soluciones completas para el sistema de enfriamiento de tu vehículo</p>
+
+    <div class="services-grid">
+      <div class="service-card highlight">
+        <div class="new-badge">NUEVOS</div>
+        <div class="service-icon">🌡️</div>
+        <h3>Radiadores</h3>
+        <p>Radiadores nuevos y de calidad para todo tipo de vehículos. Instalación profesional.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛢️</div>
+        <h3>Ánforas</h3>
+        <p>Venta e instalación de ánforas (depósitos de recuperación de refrigerante).</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">❄️</div>
+        <h3>Enfriadores</h3>
+        <p>Enfriadores de aceite y de transmisión. Mantenimiento y cambio.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>Sondeado</h3>
+        <p>Diagnóstico y sondeado de radiadores para detectar fugas y obstrucciones.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Soldadura</h3>
+        <p>Soldadura especializada de radiadores de aluminio y cobre.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧪</div>
+        <h3>Anticongelante</h3>
+        <p>Venta de anticongelante de calidad y cambio completo del sistema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us">
+    <div class="why-us-inner">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">✅</div>
+          <h3>Radiadores Nuevos</h3>
+          <p>Trabajamos con piezas de calidad garantizada</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Servicio Rápido</h3>
+          <p>Atención ágil para que no te quedes sin auto</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">👨‍🔧</div>
+          <h3>Experiencia</h3>
+          <p>Especialistas en sistemas de enfriamiento</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📍</div>
+          <h3>Ubicación Cómoda</h3>
+          <p>A un costado de la Carretera Internacional</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE RADIATOR -->
+  <section class="radiator-demo">
+    <h2>⚠️ Demostración Interactiva</h2>
+    <div class="warning">
+      <strong>¡Nunca abras el radiador en caliente!</strong><br>
+      El líquido sale a alta presión y temperatura. Puede causar quemaduras graves. Esta es solo una simulación.
+    </div>
+
+    <div class="radiator-container" id="radiatorBox">
+      <!-- Water spray particles -->
+      <div class="water-spray" id="waterSpray"></div>
+
+      <svg class="radiator-svg" viewBox="0 0 280 340" xmlns="http://www.w3.org/2000/svg">
+        <!-- Shadow -->
+        <ellipse cx="140" cy="325" rx="90" ry="10" fill="rgba(0,0,0,0.3)"/>
+
+        <!-- Side tanks -->
+        <rect x="30" y="70" width="28" height="220" rx="6" fill="#4a5568"/>
+        <rect x="222" y="70" width="28" height="220" rx="6" fill="#4a5568"/>
+
+        <!-- Main core (fins) -->
+        <rect x="58" y="75" width="164" height="210" rx="4" fill="#2d3748"/>
+        <!-- Horizontal fins -->
+        <g stroke="#718096" stroke-width="1.5">
+          <line x1="62" y1="90" x2="218" y2="90"/>
+          <line x1="62" y1="105" x2="218" y2="105"/>
+          <line x1="62" y1="120" x2="218" y2="120"/>
+          <line x1="62" y1="135" x2="218" y2="135"/>
+          <line x1="62" y1="150" x2="218" y2="150"/>
+          <line x1="62" y1="165" x2="218" y2="165"/>
+          <line x1="62" y1="180" x2="218" y2="180"/>
+          <line x1="62" y1="195" x2="218" y2="195"/>
+          <line x1="62" y1="210" x2="218" y2="210"/>
+          <line x1="62" y1="225" x2="218" y2="225"/>
+          <line x1="62" y1="240" x2="218" y2="240"/>
+          <line x1="62" y1="255" x2="218" y2="255"/>
+          <line x1="62" y1="270" x2="218" y2="270"/>
+        </g>
+
+        <!-- Top header -->
+        <rect x="45" y="55" width="190" height="28" rx="5" fill="#1a202c"/>
+        <!-- Filler neck -->
+        <rect x="120" y="35" width="40" height="25" rx="3" fill="#2d3748"/>
+        <ellipse cx="140" cy="35" rx="22" ry="8" fill="#4a5568"/>
+
+        <!-- Bottom outlets -->
+        <rect x="70" y="285" width="30" height="18" rx="3" fill="#4a5568"/>
+        <rect x="180" y="285" width="30" height="18" rx="3" fill="#4a5568"/>
+
+        <!-- Cap (clickable group) -->
+        <g class="cap" id="radiatorCap">
+          <!-- Cap body -->
+          <ellipse cx="140" cy="28" rx="26" ry="12" fill="#e53e3e"/>
+          <rect x="114" y="18" width="52" height="18" rx="4" fill="#c53030"/>
+          <ellipse cx="140" cy="18" rx="26" ry="10" fill="#fc8181"/>
+          <!-- Ridges -->
+          <line x1="120" y1="22" x2="120" y2="32" stroke="#9b2c2c" stroke-width="2"/>
+          <line x1="130" y1="20" x2="130" y2="34" stroke="#9b2c2c" stroke-width="2"/>
+          <line x1="140" y1="18" x2="140" y2="36" stroke="#9b2c2c" stroke-width="2"/>
+          <line x1="150" y1="20" x2="150" y2="34" stroke="#9b2c2c" stroke-width="2"/>
+          <line x1="160" y1="22" x2="160" y2="32" stroke="#9b2c2c" stroke-width="2"/>
+          <!-- Center button -->
+          <circle cx="140" cy="22" r="6" fill="#fed7d7"/>
+        </g>
+      </svg>
+    </div>
+
+    <button class="reset-btn" id="resetCap" style="display:none;">Volver a colocar la tapa</button>
+    <p class="hint" id="capHint">👆 Haz clic en la tapa roja para quitarla</p>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section class="order-section" id="pedidos">
+    <div class="order-inner">
+      <div class="order-box">
+        <div class="order-header">
+          <h2>Haz tu Pedido</h2>
+          <p>Llena el formulario y te contactamos lo antes posible</p>
+        </div>
+        <div class="order-body">
+          <form action="https://formsubmit.co/jesus687vidal@gmail.com" method="POST">
+            <!-- Configuración de Formsubmit -->
+            <input type="hidden" name="_subject" value="Nuevo pedido - Taller Radiadores TALIBAN">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="687-XXX-XXXX">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">¿Qué servicio necesitas? *</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Radiador nuevo">Radiador nuevo</option>
+                <option value="Ánfora">Ánfora</option>
+                <option value="Enfriador">Enfriador</option>
+                <option value="Sondeado">Sondeado</option>
+                <option value="Soldadura">Soldadura</option>
+                <option value="Anticongelante">Anticongelante</option>
+                <option value="Otro / Varios">Otro / Varios</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="vehiculo">Marca y modelo del vehículo (opcional)</label>
+              <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej: Nissan NP300 2018">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Detalles del pedido o mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más detalles..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Enviar Pedido 📩
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="contact-box">
+      <div class="contact-header">
+        <h2>Contáctanos</h2>
+        <p>Estamos listos para atenderte</p>
+      </div>
+      <div class="contact-body">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-info">
+            <h3>Teléfono / WhatsApp</h3>
+            <a href="tel:+526871660355">687-166-0355</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <h3>Dirección</h3>
+            <p>Calle José María López Rayón<br>
+            Col. La Piedrera, Guasave, Sinaloa<br>
+            <small style="font-weight:500; color:#555;">A un costado de la Carretera Internacional</small></p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://wa.me/526871660355" class="social-btn social-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Calle+José+María+López+Rayón,+Col.+La+Piedrera,+Guasave,+Sinaloa" class="social-btn social-maps" target="_blank" rel="noopener" title="Google Maps">
+            📍
+          </a>
+          <a href="https://www.facebook.com/" class="social-btn social-facebook" target="_blank" rel="noopener" title="Facebook">
+            f
+          </a>
+          <a href="https://www.youtube.com/" class="social-btn social-youtube" target="_blank" rel="noopener" title="YouTube">
+            ▶
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Taller de Radiadores TALIBAN</strong></p>
+    <p>Calle José María López Rayón, Col. La Piedrera · Guasave, Sinaloa</p>
+    <p style="margin-top:8px; opacity:0.7;">© 2026 · Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    (function() {
+      const cap = document.getElementById('radiatorCap');
+      const spray = document.getElementById('waterSpray');
+      const resetBtn = document.getElementById('resetCap');
+      const hint = document.getElementById('capHint');
+      let isRemoved = false;
+      let dropletInterval = null;
+
+      function createDroplets() {
+        spray.innerHTML = '';
+        for (let i = 0; i < 18; i++) {
+          const d = document.createElement('div');
+          d.className = 'droplet';
+          const angle = (Math.random() - 0.5) * 100;
+          const dist = 60 + Math.random() * 140;
+          const rad = (angle * Math.PI) / 180;
+          d.style.setProperty('--tx', Math.sin(rad) * dist + 'px');
+          d.style.setProperty('--ty', Math.cos(rad) * dist * 0.7 + 40 + 'px');
+          d.style.left = '0px';
+          d.style.top = '0px';
+          d.style.animationDelay = (Math.random() * 0.6) + 's';
+          d.style.animationDuration = (0.7 + Math.random() * 0.5) + 's';
+          spray.appendChild(d);
+        }
+      }
+
+      function startSpray() {
+        createDroplets();
+        spray.classList.add('active');
+        if (dropletInterval) clearInterval(dropletInterval);
+        dropletInterval = setInterval(createDroplets, 700);
+      }
+
+      function stopSpray() {
+        spray.classList.remove('active');
+        if (dropletInterval) {
+          clearInterval(dropletInterval);
+          dropletInterval = null;
+        }
+        spray.innerHTML = '';
+      }
+
+      function removeCap() {
+        if (isRemoved) return;
+        isRemoved = true;
+        cap.classList.add('removed');
+        startSpray();
+        resetBtn.style.display = 'inline-block';
+        hint.textContent = '💧 ¡Agua a presión! (simulación)';
+      }
+
+      function resetCap() {
+        isRemoved = false;
+        cap.classList.remove('removed');
+        stopSpray();
+        resetBtn.style.display = 'none';
+        hint.textContent = '👆 Haz clic en la tapa roja para quitarla';
+      }
+
+      cap.addEventListener('click', removeCap);
+      resetBtn.addEventListener('click', resetCap);
+    })();
+  </script>
+
+</body>
+</html>
